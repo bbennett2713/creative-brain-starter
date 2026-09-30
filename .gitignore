@@ -1,0 +1,22 @@
+# Keep your private material out of git if you ever push this folder.
+brand/*
+!brand/README.md
+photos/*
+!photos/README.md
+customer/*
+!customer/README.md
+references/*/*
+!references/*/README.md
+references/*.*
+!references/README.md
+results/*
+!results/README.md
+reading/*
+!reading/README.md
+reports/*
+!reports/README.md
+output/*
+!output/README.md
+.DS_Store
+__pycache__/
+.venv/

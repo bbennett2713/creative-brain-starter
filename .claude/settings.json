@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/render.py:*)",
+      "Bash(.venv/bin/python scripts/render.py:*)",
+      "Bash(python3 scripts/check_quotes.py:*)",
+      "Bash(.venv/bin/python scripts/check_quotes.py:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Read(./**)",
+      "Edit(./brain/**)",
+      "Edit(./output/**)",
+      "Write(./brain/**)",
+      "Write(./output/**)",
+      "Write(./brand/brand.md)",
+      "Write(./brand/brand-notes.md)",
+      "Write(./brand/product.md)",
+      "Write(./photos/photos.md)",
+      "Write(./photos/photos-notes.md)",
+      "Write(./customer/voice.md)",
+      "Write(./references/layouts.md)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(.venv/bin/python -m pip install playwright)",
+      "Edit(./brand/brand.md)",
+      "Edit(./brand/brand-notes.md)",
+      "Edit(./brand/product.md)",
+      "Edit(./customer/voice.md)",
+      "Edit(./photos/photos.md)",
+      "Edit(./photos/photos-notes.md)",
+      "Edit(./references/layouts.md)",
+      "Write(./reports/**)",
+      "Edit(./reports/**)",
+      "Write(./reading/**)",
+      "Write(./.claude/commands/check-in.md)",
+      "WebFetch",
+      "WebSearch",
+      "Write(./brand/fonts/**)",
+      "Write(./references/**)"
+    ]
+  }
+}

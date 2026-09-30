@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+  BRANDED AD: looks like your brand (logo, brand fonts, brand colors).
+
+  1. Your REAL photo, cropped by the frame (object-fit: cover). Never edited.
+  2. Your REAL font, loaded from brand/fonts/.
+  3. A headline and a quote taken from REAL reviews in customer/voice.md.
+
+  Sizes itself to the window, so the same file renders at 1080x1080 and 1080x1350:
+      python3 scripts/render.py templates/branded.html --out output/test
+
+  To use a real photo, swap the placeholder div for:
+      <img class="photo" src="../photos/your-photo.jpg" alt="">
+  and move the crop with object-position (for example: center 30%).
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  /* Your brand font. Put the file in brand/fonts/ and fix the name here.
+     If the file is missing, the fallback font is used so you can still preview. */
+  /* One @font-face per font file, with its weight. Rename the files to match yours.
+     render.py warns if a font file fails to load. */
+  @font-face {
+    font-family: "BrandHeadline";
+    src: url("../brand/fonts/Headline-Bold.woff2") format("woff2");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "BrandBody";
+    src: url("../brand/fonts/Body-Regular.woff2") format("woff2");
+    font-weight: 400;
+  }
+
+  /* Your brand colors, from brand/brand.md */
+  :root {
+    --brand-dark: #1f2a24;
+    --brand-light: #f4efe6;
+    --brand-accent: #c8643b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; }
+  body {
+    display: flex;
+    flex-direction: column;
+    background: var(--brand-light);
+    color: var(--brand-dark);
+    font-family: "BrandBody", Helvetica, Arial, sans-serif;
+  }
+
+  /* The photo takes whatever height is left, so 1:1 and 4:5 both work. */
+  .photo-frame { flex: 1; position: relative; overflow: hidden; }
+  .photo {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;          /* crop to fill, never stretch */
+    object-position: center 40%;
+  }
+  .placeholder {
+    background: #8a9a8f;         /* solid block standing in for a real photo */
+    display: flex; align-items: center; justify-content: center;
+    color: #ffffff; font-size: 2.6vw; letter-spacing: 0.3vw;
+  }
+
+  .copy { padding: 5vw 6vw 5.5vw; }
+  .headline {
+    font-family: "BrandHeadline", Georgia, serif;
+    font-size: 7.4vw; line-height: 1.02; letter-spacing: -0.1vw;
+  }
+  .quote {
+    margin-top: 2.6vw; font-size: 3vw; line-height: 1.35;
+    border-left: 0.7vw solid var(--brand-accent); padding-left: 2.4vw;
+  }
+  .who { margin-top: 1.2vw; font-size: 2.2vw; opacity: 0.7; padding-left: 3.1vw; }
+</style>
+</head>
+<body>
+  <div class="photo-frame">
+    <div class="photo placeholder">YOUR REAL PHOTO GOES HERE</div>
+  </div>
+  <div class="copy">
+    <h1 class="headline">[Headline your customers already wrote]</h1>
+    <p class="quote">"[A real line from a real review, word for word]"</p>
+    <p class="who">[First name or initial], verified buyer</p>
+  </div>
+</body>
+</html>

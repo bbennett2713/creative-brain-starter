@@ -1,0 +1,5 @@
+# Testimonial as a conversation
+
+A question and answer, a text thread, or a mini interview in the customer's voice.
+
+Drop 1 to 3 ads in this format here (screenshots are fine). Claude borrows the layout only, never the words, product or photos.

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+  NATIVE AD: looks like a post, not an ad.
+
+  No logo. No brand fonts. The platform's own kind of type (plain sans, caption
+  boxes like a phone story). A real photo, ideally one that looks taken on a phone.
+  The words are a real customer's, word for word, from customer/voice.md.
+
+  Use it when the argument is "a real person, not a brand, is telling you this".
+  It must still be honest: never present a studio shot as a customer's photo,
+  and never put one customer's words over another person's result.
+
+  Sizes itself to the window, so the same file renders at 1080x1080 and 1080x1350:
+      python3 scripts/render.py templates/native.html --out output/test
+
+  To use a real photo, swap the placeholder div for:
+      <img class="photo" src="../photos/your-photo.jpg" alt="">
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; }
+  body {
+    position: relative;
+    background: #111;
+    /* Phone-native type: what the platform itself would use. */
+    font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .photo {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 45%;
+  }
+  .placeholder {
+    background: #7d8a80;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 2.6vw; letter-spacing: 0.3vw;
+  }
+  /* Caption boxes, like text typed onto a story. One line per box. */
+  .caption {
+    position: absolute; left: 0; right: 0; top: 14%;
+    display: flex; flex-direction: column; align-items: center; gap: 0.6vw;
+    padding: 0 7vw; text-align: center;
+  }
+  .caption span {
+    display: inline-block;
+    background: #fff; color: #000;
+    font-weight: 600; font-size: 4.4vw; line-height: 1.2;
+    padding: 0.8vw 2vw; border-radius: 1.2vw;
+  }
+  .handle {
+    position: absolute; left: 5vw; bottom: 5vw;
+    color: #fff; font-size: 2.6vw; font-weight: 600;
+    text-shadow: 0 0.2vw 0.8vw rgba(0,0,0,0.6);
+  }
+</style>
+</head>
+<body>
+  <div class="photo placeholder">YOUR REAL PHOTO GOES HERE</div>
+  <div class="caption">
+    <span>&ldquo;[a real customer line,</span>
+    <span>word for word,</span>
+    <span>split into short lines]&rdquo;</span>
+  </div>
+  <div class="handle">[First name or initial], from a verified review</div>
+  <!-- If the photo is a brand or studio shot (not this customer's own photo), keep a small
+       "brand photo" tag in a corner, so it never passes as a customer photo (hard rule 4). Native works best with a real phone photo:
+       ask the founder for a few. -->
+</body>
+</html>
