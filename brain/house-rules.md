@@ -29,7 +29,7 @@ Reviewed by you: no
 10. **Never say the same correction twice.**
     If you've said it once, it's a rule now. Having to repeat yourself means the system failed, not you.
 11. **Borrow layouts from your own category.**
-    What works for a luxury bag won't sell grout cleaner. Your references should look like your world and your price.
+    What works for a luxury watch won't sell dish soap. Your references should look like your world and your price.
 12. **The format is part of the argument.**
     A Q&A says "you're wondering this". A before/after says "look at the difference". A phone-caption post says "a real person, not an ad". Pick the format for what it argues, not for variety.
 13. **People buy for functional and emotional reasons.**

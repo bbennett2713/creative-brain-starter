@@ -20,3 +20,9 @@ Last updated: (not started)
 
 ## What's thin
 <!-- Things the brain is missing that would make it better. -->
+
+## Next step
+<!-- One action, specific enough that a fresh chat can start it without asking. Example: "Checkpoint 5: grade round 2 of the lab test in output/lab/." -->
+
+## Facts to confirm
+<!-- Things only the founder knows (a price, a date, a claim) that are blocking something. -->

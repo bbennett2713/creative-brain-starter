@@ -38,7 +38,7 @@ Eight checkpoints, the way you'd train a new lab assistant. Each one hands you s
 
 Then 6, 7, 8 again, with a smarter brain each time. You can read any lesson in the `road/` folder.
 
-Handy commands inside Claude Code: `start` (pick up where you left off), `/results` (I have new numbers), `/grade` (correct something it made).
+Handy commands inside Claude Code: `start` (pick up where you left off), `/results` (I have new numbers), `/grade` (correct something it made), `/save` (write everything down before you close the chat, so a fresh chat picks up exactly where you stopped).
 
 ## What's in the folder
 

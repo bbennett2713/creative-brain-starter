@@ -7,7 +7,6 @@
       "Bash(.venv/bin/python scripts/check_quotes.py:*)",
       "Bash(ls:*)",
       "Bash(mkdir:*)",
-      "Bash(cp:*)",
       "Read(./**)",
       "Edit(./brain/**)",
       "Edit(./output/**)",

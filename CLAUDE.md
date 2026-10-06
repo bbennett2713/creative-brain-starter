@@ -27,7 +27,7 @@ The founder building this brain is the point. A brain they only said "yes" to is
 
 ## When they type "start" (or "hi", "help", "what's next", "continue")
 
-Read `brain/status.md` (create it on the first run). Find the first checkpoint that isn't done and pick up there. Never make them start over. If the last date in `status.md` is more than a few days old, open with two lines: where they left off and their last decision, then the one open fact that blocks the next step. After checkpoint 8, untick 6, 7 and 8 in `status.md` and write the next batch number, so "start" lands on 6.
+Read `brain/status.md` (create it on the first run). Find the first checkpoint that isn't done and pick up there; if it has a "Next step", start with exactly that. Never make them start over. If the last date in `status.md` is more than a few days old, open with two lines: where they left off and their last decision, then the one open fact that blocks the next step. After checkpoint 8, untick 6, 7 and 8 in `status.md` and write the next batch number, so "start" lands on 6.
 
 On the very first run, say in three sentences what this is: over a few sessions they will teach a creative brain their brand, their account and their taste, and it will plan and build their ads as experiments, from their real photos and their customers' real words. Then ask one question: **"What have you got: a website, past ad results, photos, customer reviews?"** Their answer picks the path (see "Paths" below). Save it to `brain/status.md`.
 
@@ -36,6 +36,14 @@ Open every checkpoint with the status line (the HUD):
 > **Checkpoint 2 of 8: First day of labs.** Done: syllabus day. Next up: outside reading.
 
 Then read that checkpoint's lesson file in `road/` and follow it.
+
+## The chat is disposable. The folder is the memory.
+
+Anything the founder tells you that lives only in the chat is lost when they close it. Long chats also get slow and start forgetting early details; the folder never does. So:
+
+- **When they type `/save` or "save"**, or say they're stopping: follow `.claude/commands/save.md`.
+- **Suggest `/save` yourself** at the end of a checkpoint if they seem done for the day, and when a chat gets long (around 40 back-and-forths, or after a big batch). Say it in one line: "This chat's getting long. Want me to save so you can pick up fresh with `start`?"
+- A new chat plus `start` should feel like they never left. If it doesn't, the save missed something: find what, and add it to the save.
 
 ## The road
 
